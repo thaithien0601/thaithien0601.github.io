@@ -1,0 +1,1604 @@
+<!--
+    font-family : Poppins
+    color: #e55d87, #5fc3e4
+    
+    Phân tích trang web:
+    A.Wrapper
+        1.Header:
+            a.Address and Register/Sign In
+            b.Header-navbar
+        2.Slider
+        3.Container:
+            a.Choose location travel
+            b.Video travel
+            c.Utilities
+            d.Date(Plan) location travel 
+            e.Experience traveler
+            f.Popular place
+            g.Traveler Review (Rating)
+            h.Blog
+            j.Choose nation travel
+            h.Famous location
+        4.Footer
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTail - Travel Agency Theme</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;500;700&family=Roboto:wght@400;500;700&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper" id="scroll-top">
+        <!-- Header Contact -->
+        <div class="header-contact">
+            <div class="grid wide header-contact--flex">
+                <ul class="header__address-list">
+                    <li class="header__address-item">
+                        <a href="mailto:manchesteru270@gmail.com" class="header__address-link">
+                            <i class="header__address-icon far fa-envelope"></i>
+                            <span class="header__address-text">manchesteru270@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="header__address-item">
+                        <a href="tel:077 944 8659" class="header__address-link">
+                            <i class="header__address-icon fas fa-phone-alt"></i>
+                            <span class="header__address-text">077 944 8659</span>
+                        </a>
+                    </li>
+                    <li class="header__address-item">
+                        <a class="header__address-link" href="https://www.google.rs/maps/place/Charging+Bull/@40.7055242,-74.0133806,20z/data=!4m5!3m4!1s0x0:0xc7db393ae1eff521!8m2!3d40.7055537!4d-74.0134436" target="_blank">
+                            <i class="header__address-icon fas fa-map-marker-alt"></i>
+                            <span class="header__address-text">Tran Cao Van St, Da Nang</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="header-operate">
+                    <ul class="header__social-list">
+                        <li class="header__social-item">
+                            <a href="" class="header__social-link">
+                                <i class="header__social-icon fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="header__social-item">
+                            <a href="" class="header__social-link">
+                                <i class="header__social-icon fab fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                        <li class="header__social-item">
+                            <a href="" class="header__social-link">
+                                <i class="header__social-icon fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="header__social-item">
+                            <a href="" class="header__social-link">
+                                <i class="header__social-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="header__method">
+                        <div class="header__language">
+                            <a href="" class="header__language-link">
+                                English
+                                <i class="header__language-icon fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="header__language-list">
+                                <li class="header__language-item">
+                                    <a href="" class="header__language-item-link">
+                                        French
+                                    </a>
+                                </li>
+                                <li class="header__language-item">
+                                    <a href="" class="header__language-item-link">
+                                        German
+                                    </a>
+                                </li>
+                                <li class="header__language-item">
+                                    <a href="" class="header__language-item-link">
+                                        Italian
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="" class="header-user">
+                            <i class="far fa-user-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Navbar-->
+        <div class="header">
+            <div class="navbar">
+                <div class="grid wide header-navbar--flex">
+                    <input type="checkbox" name="" id="navbar__mobile" hidden>
+                    <label for="navbar__mobile" class="navbar-mobile__menu">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <div class="navbar__logo">
+                        <a href="" class="logo__link">
+                            <img src="./assets/images/logo.png" alt="Setsail" class="navbar__logo-img">
+                        </a>
+                    </div>
+                    <ul class="navbar__list">
+                        <label for="navbar__mobile" class="navbar-mobile__menu-close">
+                            <i class="fas fa-times"></i>
+                        </label>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-link">Home</a>
+                            <input type="radio" name="nav-select" id="show-subnav__list--1">
+                            <label for="show-subnav__list--1" class="navbar__item-link navbar__item-link-mobile">Home</label>
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Travel Agency</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Winter Holidays</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Summer Holidays</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">City Tours</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Wine Tours</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-link">Pages</a>
+                            <input type="radio" name="nav-select" id="show-subnav__list--2">
+                            <label for="show-subnav__list--2" class="navbar__item-link navbar__item-link-mobile">Pages</label>
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">About us</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">What we offer</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Our team</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Contact us</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">FAQ page</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-link">Destinations</a>
+                            <input type="radio" name="nav-select" id="show-subnav__list--3">
+                            <label for="show-subnav__list--3" class="navbar__item-link navbar__item-link-mobile">Destinations</label>
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Destination list</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Destination slider</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Destination item</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-link">Tours</a>
+                            <input type="radio" name="nav-select" id="show-subnav__list--4">
+                            <label for="show-subnav__list--4" class="navbar__item-link navbar__item-link-mobile">Tours</label>
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Standard list</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Gallery list</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Split list</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Tour item</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-link">Blog</a>
+                            <input type="radio" name="nav-select" id="show-subnav__list--5">
+                            <label for="show-subnav__list--5" class="navbar__item-link navbar__item-link-mobile">Blog</label>
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Blog masonry</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link subnav__link-hidden">
+                                        Blog standard
+                                    </a>
+                                    <input type="checkbox" name="dropdown-select" id="show-dropdown--1" hidden>
+                                    <label for="show-dropdown--1" class="subnav__link subnav__link-mobile">Blog standard</label>
+                                    <i class="fas fa-angle-right"></i>
+                                    <ul class="dropdown">
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Right sidebar</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Left sidebar</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Without sidebar</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Post types</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-link">Shop</a>
+                            <input type="radio" name="nav-select" id="show-subnav__list--6">
+                            <label for="show-subnav__list--6" class="navbar__item-link navbar__item-link-mobile">Shop</label>
+                            <ul class="subnav__list subnav__list--right">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Product list</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Product single</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Shop layouts</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <i class="subnav-icon-desktop fas fa-angle-left"></i>
+                                    <a href="" class="subnav__link subnav__link-hidden">
+                                        Shop pages
+                                    </a>
+                                    <input type="checkbox" name="dropdown-select" id="show-dropdown--2" hidden>
+                                    <label for="show-dropdown--2" class="subnav__link subnav__link-mobile">Shop pages</label>
+                                    <i class="subnav-icon-mobile fas fa-angle-right"></i>
+                                    <ul class="dropdown dropdown--right">
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">My account</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Cart</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Checkout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item-mega">
+                            <a href="" class="navbar__item-link">Elements</a>
+                            <input type="radio" name="nav-select" id="show-mega-menu">
+                            <label for="show-mega-menu" class="navbar__item-link navbar__item-link-mobile">Elements</label>
+                            <div class="mega-menu">
+                                <div class="mega-content">
+                                    <div class="mega-col">
+                                        <div class="mega__header">
+                                            <a href="" class="mega__header-link">Featured</a>
+                                        </div>
+                                        <ul class="mega__list">
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Tour List</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Tour Carousel</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Destination With Tours</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Destination List</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Destination Fullscreen Slider</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-col">
+                                        <div class="mega__header">
+                                            <a href="" class="mega__header-link">Presentation</a>
+                                        </div>
+                                        <ul class="mega__list">
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Blog List</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Shop List</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Testimonials</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Parallax Section</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Video Button</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-col">
+                                        <div class="mega__header">
+                                            <a href="" class="mega__header-link">Classic</a>
+                                        </div>
+                                        <ul class="mega__list">
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Accordions</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Google Maps</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Contact Form</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Progress Bar</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Call To Action</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-col">
+                                        <div class="mega__header">
+                                            <a href="" class="mega__header-link">Typography</a>
+                                        </div>
+                                        <ul class="mega__list">
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Headings</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Section Title</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Blockquote</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Highlights</a>
+                                            </li>
+                                            <li class="mega__item">
+                                                <a href="" class="mega__item-link">Custom Font</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navbar__list-icon">
+                        <div class="navbar__cart">
+                            <a href="" class="navbar__cart-link">
+                                <i class="navbar__cart-icon fas fa-shopping-basket"></i>
+                            </a>
+                            <div class="navbar__cart-list">
+                                <p class="navbar__cart-no-product-msg">No products in the cart</p>
+                            </div>
+                        </div>
+
+                        <div class="navbar__search-quick margin-left-2rem">
+                            <i class="navbar__search-icon fas fa-search"></i>
+                        </div>
+
+                        <div class="navbar__menu-search margin-left-2rem">
+                            <label for="menu-search-map__input">
+                                <i class="menu-search__icon fas fa-bars"></i>
+                            </label>
+                            <input hidden type="checkbox" name="search-map" id="menu-search-map__input">
+                            <!-- Modal  Search Map -->
+                            <div class="modal__search-map">
+                                <label for="menu-search-map__input" class="modal__search-map-close">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                                <label for="menu-search-map__input" class="modal__search-map-overlay"></label>
+                                <div class="modal__map-heading">
+                                    <div class="modal__logo">
+                                        <img src="./assets/images/logo.png" alt="SatSail" class="modal__logo-img">
+                                    </div>
+
+                                    <div class="modal__slogan">
+                                        <img src="./assets/images/sidearea-img-2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="modal__map-content">
+
+                                    <a href="" class="modal__map-link">
+                                        <img src="./assets/images/sidearea-img.jpg" alt="Map Area" class="modal__map-img">
+                                    </a>
+
+
+                                    <p class="modal__map-dsc">Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque</p>
+
+                                    <form action="" class="search__map-form">
+                                        <h4>Find Your Destination</h4>
+
+                                        <div class="form-search">
+                                            <input type="text" name="Name Area" class="modal__map-input" placeholder="Search...">
+                                            <button type="submit" class="modal__map-btn">
+                                                <i class="fas fa-search modal__map-btn-icon"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="modal__map-footer">
+                                    <h4>Follow Me</h4>
+
+                                    <ul class="modal__map-social-list">
+                                        <li class="modal__map-social-item">
+                                            <a href="" class="modal__map-social-link">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="modal__map-social-item">
+                                            <a href="" class="modal__map-social-link">
+                                                <i class="fab fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                        <li class="modal__map-social-item">
+                                            <a href="" class="modal__map-social-link">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="modal__map-social-item">
+                                            <a href="" class="modal__map-social-link">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="navbar-mobile__user">
+                        <i class="far fa-user-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slider__btn-right">
+                <i class="slider__btn-icon fas fa-chevron-right"></i>
+            </div>
+            <div class="slider__btn-left">
+                <i class="slider__btn-icon fas fa-chevron-left"></i>
+            </div>
+
+            <div class="banner banner--1">
+                <img src="./assets/images/slider-img/slider-img-1.jpg" alt="Friend" class="banner__img">
+                <div class="banner__content banner__content--1">
+                    <h2>Let's go now</h2>
+                    <h1>Explore and travel.</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita tenetur eius ipsum ea, voluptatibus possimus perspiciatis consequatur?</p>
+                </div>
+            </div>
+            <div class="banner banner--2">
+                <img src="./assets/images/slider-img/slider-img-2.jpg" alt="Photographer" class="banner__img">
+                <div class="banner__content banner__content--2">
+                    <h2>Come with us</h2>
+                    <h1>Relax and enjoy.</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita tenetur eius ipsum ea, voluptatibus possimus perspiciatis consequatur?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!-- Cần sửa lại -->
+
+            <div class="book-travel">
+                <div class="grid wide">
+                    <form action="#" class="book-form">
+                        <div class="book__place">
+                            <i class="book__place-icon fas fa-compass"></i>
+                            <input type="text" name="Place" class="book__place-input" placeholder="Where to?">
+                        </div>
+                        <div class="book__date">
+                            <i class="book__date-icon far fa-calendar"></i>
+                            <select name="Month" class="book__date-select">
+                                    <option value="month">Month</option>
+                                    <option value="january">January</option>
+                                    <option value="february">February</option>
+                                    <option value="march">March</option>
+                                    <option value="april">April</option>
+                                    <option value="may">May</option>
+                                    <option value="june">June</option>
+                                    <option value="july">July</option>
+                                    <option value="august">August</option>
+                                    <option value="september">September</option>
+                                    <option value="october">October</option>
+                                    <option value="november">November</option>
+                                    <option value="december">December</option>
+                                </select>
+                        </div>
+                        <div class="book__travel-type">
+                            <i class="book__travel-type-icon fas fa-thumbtack"></i>
+                            <select name="Travel Type" class="book__travel-type-select">
+                                    <option value="travel Type">Travel Type</option>
+                                    <option value="europe">Europe</option>
+                                    <option value="latest">Latest</option>
+                                    <option value="ny">NY</option>
+                                    <option value="popular">Popular</option>
+                                    <option value="skiing">Skiing</option>
+                                    <option value="trendy">Trendy</option>
+                                    <option value="wines">Wines</option>                          
+                            </select>
+                        </div>
+                        <input type="submit" value="Find Now" class="book__btn-input">
+                    </form>
+                </div>
+            </div>
+
+            <div class="place-travel">
+                <div class="grid wide">
+                    <div class="heading-section padding-top-106px padding-top-246px padding-top-146px">
+                        <h3 class="sub-heading">Choose Your</h3>
+                        <h1 class="main-heading">Perfect Holiday</h1>
+                        <p class="para-heading--three-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                    </div>
+
+                    <div class="place-travel__content">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                                <a href="" class="place-travel__item-nation">
+                                    <img src="./assets/images/spain-img/spain-1.jpg" alt="" class="place-travel__img-nation">
+                                    <p class="place-travel__name-nation">Spain</p>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                                <a href="" class="place-travel__item-city">
+                                    <img src="./assets/images/spain-img/spain-2.jpg" alt="" class="place-travel__img-city">
+                                    <div class="place-travel__item-body">
+                                        <p class="place-travel__name-city">Tarragona</p>
+                                        <div class="place-travel__item-dsc">
+                                            <div class="place-travel__item-rating">
+                                                <i class="place-travel__item-icon fas fa-star-half-alt"></i>
+                                                <span>5.0</span>
+                                                <span>Good</span>
+                                            </div>
+                                            <span class="place-travel__item-price">$1740</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                                <a href="" class="place-travel__item-city">
+                                    <img src="./assets/images/spain-img/spain-3.jpg" alt="" class="place-travel__img-city">
+                                    <div class="place-travel__item-body">
+                                        <p class="place-travel__name-city">Madrid</p>
+                                        <div class="place-travel__item-dsc">
+                                            <div class="place-travel__item-rating margin-right-9rem">
+                                                <i class="place-travel__item-icon fas fa-star"></i>
+                                                <span>7.0</span>
+                                                <span>Superb</span>
+                                            </div>
+                                            <span class="place-travel__item-price">$1100</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                                <a href="" class="place-travel__item-city margin-bottom-tablet">
+                                    <img src="./assets/images/spain-img/spain-4.jpg" alt="" class="place-travel__img-city">
+                                    <div class="place-travel__item-body">
+                                        <p class="place-travel__name-city">Barcelona</p>
+                                        <div class="place-travel__item-dsc">
+                                            <div class="place-travel__item-rating">
+                                                <i class="place-travel__item-icon fas fa-star-half-alt"></i>
+                                                <span>5.0</span>
+                                                <span>Good</span>
+                                            </div>
+                                            <span class="place-travel__item-price">$840</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile margin-bottom-tablet">
+                                <a href="" class="place-travel__item-city">
+                                    <img src="./assets/images/taiwan-img/taiwan-2.jpg" alt="" class="place-travel__img-city">
+                                    <div class="place-travel__item-body">
+                                        <p class="place-travel__name-city">Kaohsiung</p>
+                                        <div class="place-travel__item-dsc">
+                                            <div class="place-travel__item-rating margin-right-9rem">
+                                                <i class="place-travel__item-icon fas fa-star"></i>
+                                                <span>8.0</span>
+                                                <span>Superb</span>
+                                            </div>
+                                            <span class="place-travel__item-price">$963</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                                <a href="" class="place-travel__item-city">
+                                    <img src="./assets/images/taiwan-img/taiwan-3.jpg" alt="" class="place-travel__img-city">
+                                    <div class="place-travel__item-body">
+                                        <p class="place-travel__name-city">Taipei</p>
+                                        <div class="place-travel__item-dsc">
+                                            <div class="place-travel__item-rating">
+                                                <i class="place-travel__item-icon fas fa-star-half-alt"></i>
+                                                <span>5.0</span>
+                                                <span>Good</span>
+                                            </div>
+                                            <span class="place-travel__item-price">$2130</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                                <a href="" class="place-travel__item-city">
+                                    <img src="./assets/images/taiwan-img/taiwan-4.jpg" alt="" class="place-travel__img-city">
+                                    <div class="place-travel__item-body">
+                                        <p class="place-travel__name-city">Tainan</p>
+                                        <div class="place-travel__item-dsc">
+                                            <div class="place-travel__item-rating margin-right-9rem">
+                                                <i class="place-travel__item-icon fas fa-star"></i>
+                                                <span>7.3</span>
+                                                <span>Superb</span>
+                                            </div>
+                                            <span class="place-travel__item-price">$999</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                                <a href="" class="place-travel__item-nation">
+                                    <img src="./assets/images/taiwan-img/taiwan-1.jpg" alt="" class="place-travel__img-nation">
+                                    <p class="place-travel__name-nation">Taiwan</p>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                                <a href="" class="place-travel__item-nation">
+                                    <img src="./assets/images/bali-img/bali-1.jpg" alt="" class="place-travel__img-nation">
+                                    <p class="place-travel__name-nation">Bali</p>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                                <a href="" class="place-travel__item-city">
+                                    <img src="./assets/images/bali-img/bali-2.jpg" alt="" class="place-travel__img-city">
+                                    <div class="place-travel__item-body">
+                                        <p class="place-travel__name-city">Ubud</p>
+                                        <div class="place-travel__item-dsc">
+                                            <div class="place-travel__item-rating">
+                                                <i class="place-travel__item-icon fas fa-star-half-alt"></i>
+                                                <span>6.0</span>
+                                                <span>Good</span>
+                                            </div>
+                                            <span class="place-travel__item-price">$888</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                                <a href="" class="place-travel__item-city">
+                                    <img src="./assets/images/image-common/bali-3.jpg" alt="" class="place-travel__img-city">
+                                    <div class="place-travel__item-body">
+                                        <p class="place-travel__name-city">Seminyak</p>
+                                        <div class="place-travel__item-dsc">
+                                            <div class="place-travel__item-rating margin-right-9rem">
+                                                <i class="place-travel__item-icon fas fa-star"></i>
+                                                <span>9.0</span>
+                                                <span>Superb</span>
+                                            </div>
+                                            <span class="place-travel__item-price">$966</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                                <a href="" class="place-travel__item-city">
+                                    <img src="./assets/images/bali-img/bali-4.jpg" alt="" class="place-travel__img-city">
+                                    <div class="place-travel__item-body">
+                                        <p class="place-travel__name-city">Denpasar</p>
+                                        <div class="place-travel__item-dsc">
+                                            <div class="place-travel__item-rating">
+                                                <i class="place-travel__item-icon fas fa-star-half-alt"></i>
+                                                <span>6.7</span>
+                                                <span>Good</span>
+                                            </div>
+                                            <span class="place-travel__item-price">$999</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand">
+                        <img src="./assets/images/image-1.png" alt="brand-image" class="brand-img">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-travel">
+                <div class="grid wide">
+                    <div class="heading-section padding-top-106px">
+                        <h3 class="sub-heading sub-heading--white">Go & Discover</h3>
+                        <h1 class="main-heading main-heading--white">Breathtaking Cities</h1>
+                        <p class="para-heading--two-row para-heading--white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                    </div>
+                    <a href="https://vimeo.com/71319358" class="video-travel__link">
+                        <img src="./assets/images/image-common/video-image.jpg" alt="Image traveler" class="video-travel__img">
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-travel">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 margin-bottom-mobile margin-bottom-tablet">
+                            <div class="service-travel__info">
+                                <img src="./assets/images/custom-icon/custom-icon-1.png" alt="Camera image" class="service-travel__img">
+                                <h4 class="service-travel__name">Restaurants</h4>
+                                <p class="service-travel__dsc">Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 margin-bottom-mobile ">
+                            <div class="service-travel__info">
+                                <img src="./assets/images/custom-icon/custom-icon-2.png" alt="Camera image" class="service-travel__img">
+                                <h4 class="service-travel__name">Sightseeing</h4>
+                                <p class="service-travel__dsc">Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 margin-bottom-mobile ">
+                            <div class="service-travel__info">
+                                <img src="./assets/images/custom-icon/custom-icon-3.png" alt="Camera image" class="service-travel__img">
+                                <h4 class="service-travel__name">Shops & Boutiques</h4>
+                                <p class="service-travel__dsc">Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 margin-bottom-mobile ">
+                            <div class="service-travel__info">
+                                <img src="./assets/images/custom-icon/custom-icon-4.png" alt="Camera image" class="service-travel__img">
+                                <h4 class="service-travel__name">Where to Stay</h4>
+                                <p class="service-travel__dsc">Aenean commodo ligula eget dolor. Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="type-travel">
+                <div class="grid wide">
+                    <div class="heading-section padding-top-86px">
+                        <h3 class="sub-heading">Plan The</h3>
+                        <h1 class="main-heading">Perfect Holiday</h1>
+                        <p class="para-heading--three-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                    </div>
+                </div>
+                <input type="radio" hidden name="dot" id="type-travel__input-one">
+                <input type="radio" hidden name="dot" id="type-travel__input-two">
+                <div class="grid type-travel--width">
+                    <div class="row margin-10px">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="type-travel-item">
+                                <a href="" class="type-travel__link">
+                                    <img src="./assets/images/tour-image/tour-img-1.jpg" alt="" class="type-travel__img">
+                                </a>
+                                <div class="type-travel__plan">
+                                    <i class="type-travel__plan-icon far fa-calendar"></i>
+                                    <span>1</span>
+                                    <i class="type-travel__plan-icon far fa-user"></i>
+                                    <span>13+</span>
+                                    <a class="type-travel__plan-link" href="">
+                                        <i class="type-travel__plan-icon fas fa-map-marker-alt"></i>
+                                        <span>Europe</span>
+                                    </a>
+                                </div>
+                                <div class="type-travel__intro">
+                                    <a class="type-travel__intro-link" href="">Milan</a>
+                                    <p class="type-travel__intro-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                    <div class="type-travel__info">
+                                        <span class="type-travel__info-price">$1230</span>
+                                        <div class="type-travel__info-rating">
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>6.0</span>
+                                            <span>Good</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="type-travel-item">
+                                <a href="" class="type-travel__link">
+                                    <img src="./assets/images/tour-image/tour-img-5.jpg" alt="" class="type-travel__img">
+                                </a>
+                                <div class="type-travel__plan">
+                                    <i class="type-travel__plan-icon far fa-calendar"></i>
+                                    <span>3</span>
+                                    <i class="type-travel__plan-icon far fa-user"></i>
+                                    <span>10+</span>
+                                    <a class="type-travel__plan-link" href="">
+                                        <i class="type-travel__plan-icon fas fa-map-marker-alt"></i>
+                                        <span>Europe</span>
+                                    </a>
+                                </div>
+                                <div class="type-travel__intro">
+                                    <a class="type-travel__intro-link" href="">Roma</a>
+                                    <p class="type-travel__intro-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                    <div class="type-travel__info">
+                                        <span class="type-travel__info-price">$2340</span>
+                                        <div class="type-travel__info-rating">
+                                            <i class="fas fa-star"></i>
+                                            <span>8.0</span>
+                                            <span>Superb</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="type-travel-item">
+                                <a href="" class="type-travel__link">
+                                    <img src="./assets/images/image-common/valencia-sevilla.jpg" alt="" class="type-travel__img">
+                                </a>
+                                <div class="type-travel__plan">
+                                    <i class="type-travel__plan-icon far fa-calendar"></i>
+                                    <span>2</span>
+                                    <i class="type-travel__plan-icon far fa-user"></i>
+                                    <span>11+</span>
+                                    <a class="type-travel__plan-link" href="">
+                                        <i class="type-travel__plan-icon fas fa-map-marker-alt"></i>
+                                        <span>Europe</span>
+                                    </a>
+                                </div>
+                                <div class="type-travel__intro">
+                                    <a class="type-travel__intro-link" href="">Valencia</a>
+                                    <p class="type-travel__intro-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                    <div class="type-travel__info">
+                                        <span class="type-travel__info-price">$930</span>
+                                        <div class="type-travel__info-rating">
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>7.0</span>
+                                            <span>Good</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="type-travel-item">
+                                <a href="" class="type-travel__link">
+                                    <img src="./assets/images/image-common/vatican-italy.jpg" alt="" class="type-travel__img">
+                                </a>
+                                <div class="type-travel__plan">
+                                    <i class="type-travel__plan-icon far fa-calendar"></i>
+                                    <span>1</span>
+                                    <i class="type-travel__plan-icon far fa-user"></i>
+                                    <span>13+</span>
+                                    <a class="type-travel__plan-link" href="">
+                                        <i class="type-travel__plan-icon fas fa-map-marker-alt"></i>
+                                        <span>Europe</span>
+                                    </a>
+                                </div>
+                                <div class="type-travel__intro">
+                                    <a class="type-travel__intro-link" href="">Vatican</a>
+                                    <p class="type-travel__intro-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                    <div class="type-travel__info">
+                                        <span class="type-travel__info-price">$3000</span>
+                                        <div class="type-travel__info-rating">
+                                            <i class="fas fa-star"></i>
+                                            <span>9.0</span>
+                                            <span>Superb</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="type-travel-item">
+                                <a href="" class="type-travel__link">
+                                    <img src="./assets/images/tour-image/tour-img-2.jpg" alt="" class="type-travel__img">
+                                </a>
+                                <div class="type-travel__plan">
+                                    <i class="type-travel__plan-icon far fa-calendar"></i>
+                                    <span>1</span>
+                                    <i class="type-travel__plan-icon far fa-user"></i>
+                                    <span>13+</span>
+                                    <a class="type-travel__plan-link" href="">
+                                        <i class="type-travel__plan-icon fas fa-map-marker-alt"></i>
+                                        <span>Skiing</span>
+                                    </a>
+                                </div>
+                                <div class="type-travel__intro">
+                                    <a class="type-travel__intro-link" href="">Kids Ski School</a>
+                                    <p class="type-travel__intro-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                    <div class="type-travel__info">
+                                        <span class="type-travel__info-price">$1230</span>
+                                        <div class="type-travel__info-rating">
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>6.0</span>
+                                            <span>Good</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="type-travel-item">
+                                <a href="" class="type-travel__link">
+                                    <img src="./assets/images/tour-image/tour-img-3.jpg" alt="" class="type-travel__img">
+                                </a>
+                                <div class="type-travel__plan">
+                                    <i class="type-travel__plan-icon far fa-calendar"></i>
+                                    <span>3</span>
+                                    <i class="type-travel__plan-icon far fa-user"></i>
+                                    <span>10+</span>
+                                    <a class="type-travel__plan-link" href="">
+                                        <i class="type-travel__plan-icon fas fa-map-marker-alt"></i>
+                                        <span>Skiing</span>
+                                    </a>
+                                </div>
+                                <div class="type-travel__intro">
+                                    <a class="type-travel__intro-link" href="">Active Winter</a>
+                                    <p class="type-travel__intro-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                    <div class="type-travel__info">
+                                        <span class="type-travel__info-price">$2340</span>
+                                        <div class="type-travel__info-rating">
+                                            <i class="fas fa-star"></i>
+                                            <span>8.0</span>
+                                            <span>Superb</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="type-travel-item">
+                                <a href="" class="type-travel__link">
+                                    <img src="./assets/images/tour-image/tour-img-4.jpg" alt="" class="type-travel__img">
+                                </a>
+                                <div class="type-travel__plan">
+                                    <i class="type-travel__plan-icon far fa-calendar"></i>
+                                    <span>2</span>
+                                    <i class="type-travel__plan-icon far fa-user"></i>
+                                    <span>11+</span>
+                                    <a class="type-travel__plan-link" href="">
+                                        <i class="type-travel__plan-icon fas fa-map-marker-alt"></i>
+                                        <span>Skiing</span>
+                                    </a>
+                                </div>
+                                <div class="type-travel__intro">
+                                    <a class="type-travel__intro-link" href="">Snow Surfing</a>
+                                    <p class="type-travel__intro-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                    <div class="type-travel__info">
+                                        <span class="type-travel__info-price">$1330</span>
+                                        <div class="type-travel__info-rating">
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>7.0</span>
+                                            <span>Good</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="type-travel-item">
+                                <a href="" class="type-travel__link">
+                                    <img src="./assets/images/tour-image/tour-img-6.jpg" alt="" class="type-travel__img">
+                                </a>
+                                <div class="type-travel__plan">
+                                    <i class="type-travel__plan-icon far fa-calendar"></i>
+                                    <span>1</span>
+                                    <i class="type-travel__plan-icon far fa-user"></i>
+                                    <span>13+</span>
+                                    <a class="type-travel__plan-link" href="">
+                                        <i class="type-travel__plan-icon fas fa-map-marker-alt"></i>
+                                        <span>Skiing</span>
+                                    </a>
+                                </div>
+                                <div class="type-travel__intro">
+                                    <a class="type-travel__intro-link" href="">Winter Action</a>
+                                    <p class="type-travel__intro-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                                    <div class="type-travel__info">
+                                        <span class="type-travel__info-price">$800</span>
+                                        <div class="type-travel__info-rating">
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>6.3</span>
+                                            <span>Good</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="type-travel__btns">
+                    <label for="type-travel__input-one" class="type-travel__btn type-travel__btn--one type-travel__btn--active"></label>
+                    <label for="type-travel__input-two" class="type-travel__btn type-travel__btn--two"></label>
+                </div>
+            </div>
+
+            <div class="travel-exp">
+                <input type="radio" name="checkbox" id="travel-exp-btn-right" hidden>
+                <input type="radio" name="checkbox" id="travel-exp-btn-left" hidden>
+                <div class="grid travel-exp--width">
+                    <div class="travel-exp__person">
+                        <img src="./assets/images/person-image/user-1.png" alt="Marianna Loreto" class="travel-exp__person-img">
+                        <p class="travel-exp__person-review">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis"</p>
+                        <p class="travel-exp__person-name">Marianna Loreto</p>
+                    </div>
+                    <div class="travel-exp__person">
+                        <img src="./assets/images/person-image/user-2.png" alt="Marianna Loreto" class="travel-exp__person-img">
+                        <p class="travel-exp__person-review">"Dolor ipsum dolor sit amet, consectetuer adipiscing elit. Lorem commodo ligula eg dolor. Lorem Aenean msa. Cum sociis natoque"</p>
+                        <p class="travel-exp__person-name">John Rios</p>
+                    </div>
+                </div>
+                <div class="travel-exp__control">
+                    <label for="travel-exp-btn-left" class="travel-exp__btn-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </label>
+                    <label for="travel-exp-btn-right" class="travel-exp__btn-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </label>
+                </div>
+            </div>
+
+            <div class="place-popular">
+                <div class="grid wide">
+                    <div class="heading-section">
+                        <h3 class="sub-heading">The Unforgettable</h3>
+                        <h1 class="main-heading">Mediterranean</h1>
+                        <p class="para-heading--two-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis</p>
+                    </div>
+                    <div class="row padding-44px">
+                        <div class="col l-4 m-6 c-12">
+                            <div class="place-popular__item">
+                                <a href="" class="place-popular__link">
+                                    <img src="./assets/images/image-common/valencia-sevilla.jpg" alt="Valencia Image" class="place-popular__img">
+                                    <div class="place-popular__intro">
+                                        <span class="place-popular__name">Valencia</span>
+                                        <span class="place-popular__price">$1990</span>
+                                    </div>
+                                    <div class="place-popular__price-discount">
+                                        50% Off
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="place-popular__item">
+                                <a href="" class="place-popular__link">
+                                    <img src="./assets/images/image-common/bali-3.jpg" alt="Valencia Image" class="place-popular__img">
+                                    <div class="place-popular__intro">
+                                        <span class="place-popular__name">Varadeno</span>
+                                        <span class="place-popular__price">$2300</span>
+                                    </div>
+                                    <div class="place-popular__price-discount">
+                                        Special Offer
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="place-popular__item">
+                                <a href="" class="place-popular__link">
+                                    <img src="./assets/images/image-common/vatican-italy.jpg" alt="Valencia Image" class="place-popular__img">
+                                    <div class="place-popular__intro">
+                                        <span class="place-popular__name">Italy Tour</span>
+                                        <span class="place-popular__price">$2560</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-review">
+                <div class="grid wide">
+                    <div class="heading-section padding-top-106px">
+                        <h3 class="sub-heading sub-heading--white">Read The Top</h3>
+                        <h1 class="main-heading main-heading--white">Travel Reviews</h1>
+                        <p class="para-heading--three-row para-heading--white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                    </div>
+                    <div class="top-review__list">
+                        <input type="radio" hidden name="select" id="top-review__item-btn--1" checked>
+                        <input type="radio" hidden name="select" id="top-review__item-btn--2">
+                        <input type="radio" hidden name="select" id="top-review__item-btn--3">
+                        <div class="top-review__list-control">
+                            <label for="top-review__item-btn--1" class="top-review__item-btn top-review__item-btn--1"></label>
+                            <label for="top-review__item-btn--2" class="top-review__item-btn top-review__item-btn--2"></label>
+                            <label for="top-review__item-btn--3" class="top-review__item-btn top-review__item-btn--3"></label>
+                        </div>
+                        <div class="top-review__item">
+                            <label for="" class="top-review__person">
+                                <img src="./assets/images/person-image/user-img-3.png" alt="" class="top-review__person-img top-review__person-img--1">
+                            </label>
+                            <div class="top-review__content top-review__content--1">
+                                <a href="" class="top-review__place">Taipei</a>
+                                <div class="top-review__rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="top-review__dsc">Pe utor aviuas lwpadit tas, vut et nihc egam yubulas. Si euvy </p>
+                                <p class="top-review__person-name">Susan Day</p>
+                            </div>
+                        </div>
+                        <div class="top-review__item">
+                            <label for="" class="top-review__person">
+                                <img src="./assets/images/person-image/user-img-4.png" alt="" class="top-review__person-img top-review__person-img--2">
+                            </label>
+                            <div class="top-review__content top-review__content--2">
+                                <a href="" class="top-review__place">Kaohsiung</a>
+                                <div class="top-review__rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="top-review__dsc">Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy</p>
+                                <p class="top-review__person-name">Roger Brooks</p>
+                            </div>
+                        </div>
+                        <div class="top-review__item">
+                            <label for="" class="top-review__person">
+                                <img src="./assets/images/person-image/user-img-5.png" alt="" class="top-review__person-img top-review__person-img--3">
+                            </label>
+                            <div class="top-review__content top-review__content--3">
+                                <a href="" class="top-review__place">Barcelona</a>
+                                <div class="top-review__rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="top-review__dsc">Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy</p>
+                                <p class="top-review__person-name">James Fisher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-8 blog__padding">
+                            <div class="blog__intro">
+                                <h2 class="blog__intro-heading">From Our Blog</h2>
+                                <p class="blog__intro-dsc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                            </div>
+                            <div class="blog__list">
+                                <div class="blog__item">
+                                    <a href="" class="blog__item-link">
+                                        <img src="./assets/images/blog-image/blog-img-1.jpg" alt="" class="blog__item-link-img">
+                                    </a>
+                                    <div class="blog__item-info">
+                                        <a href="" class="blog__item-info-heading">Amazing Tour</a>
+                                        <p class="blog__item-info-text">Al alit emnos lnipedit ius, vel et hinc agam fabulas. Ut audiam invenire iracundia vim. An eam dico similique, ut sint posse sit,</p>
+                                        <a href="" class="blog__item-info-date">September 11, 2016</a>
+                                        <a href="" class="blog__item-info-comment">
+                                            <i class="far fa-comment"></i>
+                                            <span>1 Comment</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__list">
+                                <div class="blog__item">
+                                    <a href="" class="blog__item-link">
+                                        <img src="./assets/images/blog-image/blog-img-2.jpg" alt="" class="blog__item-link-img">
+                                    </a>
+                                    <div class="blog__item-info">
+                                        <a href="" class="blog__item-info-heading">Your Vacation</a>
+                                        <p class="blog__item-info-text">Al alit emnos lnipedit ius, vel et hinc agam fabulas. Ut audiam invenire iracundia vim. An eam dico similique, ut sint posse sit,</p>
+                                        <a href="" class="blog__item-info-date">September 11, 2016</a>
+                                        <a href="" class="blog__item-info-comment">
+                                            <i class="far fa-comment"></i>
+                                            <span>2 Comment</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-4 m-12 c-12 blog__sale-center">
+                            <a href="" class="blog__sale">
+                                <img src="./assets/images/banner-img-1.jpg" alt="" class="blog__sale-img">
+                                <div class="blog__sale-text">
+                                    <p>travel.com</p>
+                                    <p>Sale up to 70%</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nation-travel">
+                <div class="grid wide">
+                    <div class="heading-section padding-top-106px">
+                        <h3 class="sub-heading">Choose Your</h3>
+                        <h1 class="main-heading">Destination</h1>
+                        <p class="para-heading--three-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis</p>
+                    </div>
+                    <div class="row padding-88px">
+                        <div class="col l-4 m-6 c-12">
+                            <div class="nation-travel__item">
+                                <a href="" class="nation-travel__link">
+                                    <div class="nation-travel__box-img">
+                                        <img src="./assets/images/image-common/netherlane.jpg" alt="" class="nation-travel__img">
+                                        <span class="nation-travel__name">Netherlands</span>
+                                    </div>
+                                </a>
+                                <div class="nation-travel__popular">
+                                    <i class="nation-travel__popular-icon fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="nation-travel__item">
+                                <a href="" class="nation-travel__link">
+                                    <div class="nation-travel__box-img">
+                                        <img src="./assets/images/image-common/bali-img-5.jpg" alt="" class="nation-travel__img">
+                                        <span class="nation-travel__name">Greece</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="nation-travel__item">
+                                <a href="" class="nation-travel__link">
+                                    <div class="nation-travel__box-img">
+                                        <img src="./assets/images/image-common/vatican-italy.jpg" alt="" class="nation-travel__img">
+                                        <span class="nation-travel__name">Italy</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="place-famous">
+                <div class="grid wide">
+                    <div class="heading-section padding-top-86px">
+                        <h3 class="sub-heading">Get Ready</h3>
+                        <h1 class="main-heading">Pack Up and Go</h1>
+                        <p class="para-heading--three-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
+                    </div>
+                    <input type="radio" hidden name="choose" id="place-famous__btn--1">
+                    <input type="radio" hidden name="choose" id="place-famous__btn--2">
+                    <input type="radio" hidden name="choose" id="place-famous__btn--3">
+                    <div class="place-famous__slide">
+                        <div class="place-famous__list">
+                            <a href="" class="place-famous__link">
+                                <img src="./assets/images/postmark-image/postmark-1.jpg" alt="" class="place-famous__img">
+                                <div class="place-famous__intro">
+                                    <h5 class="place-famous__name">Greece</h5>
+                                    <p class="place-famous__dsc">Lorem ipsum dolor sit amet, consectetuer</p>
+                                </div>
+                            </a>
+                            <a href="" class="place-famous__link">
+                                <img src="./assets/images/postmark-image/postmark-2.jpg" alt="" class="place-famous__img">
+                                <div class="place-famous__intro">
+                                    <h5 class="place-famous__name">France</h5>
+                                    <p class="place-famous__dsc">Lorem ipsum dolor sit amet, consectetuer</p>
+                                </div>
+                            </a>
+                            <a href="" class="place-famous__link">
+                                <img src="./assets/images/postmark-image/postmark-3.jpg" alt="" class="place-famous__img">
+                                <div class="place-famous__intro">
+                                    <h5 class="place-famous__name">Italy</h5>
+                                    <p class="place-famous__dsc">Lorem ipsum dolor sit amet, consectetuer</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="place-famous__list">
+                            <a href="" class="place-famous__link">
+                                <img src="./assets/images/postmark-image/postmark-4.jpg" alt="" class="place-famous__img">
+                                <div class="place-famous__intro">
+                                    <h5 class="place-famous__name">USA</h5>
+                                    <p class="place-famous__dsc">Lorem ipsum dolor sit amet, consectetuer</p>
+                                </div>
+                            </a>
+                            <a href="" class="place-famous__link">
+                                <img src="./assets/images/postmark-image/postmark-5.jpg" alt="" class="place-famous__img">
+                                <div class="place-famous__intro">
+                                    <h5 class="place-famous__name">Spain</h5>
+                                    <p class="place-famous__dsc">Lorem ipsum dolor sit amet, consectetuer</p>
+                                </div>
+                            </a>
+                            <a href="" class="place-famous__link">
+                                <img src="./assets/images/postmark-image/postmark-6.jpg" alt="" class="place-famous__img">
+                                <div class="place-famous__intro">
+                                    <h5 class="place-famous__name">Japan</h5>
+                                    <p class="place-famous__dsc">Lorem ipsum dolor sit amet, consectetuer</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="place-famous__list">
+                            <a href="" class="place-famous__link">
+                                <img src="./assets/images/postmark-image/postmark-7.jpg" alt="" class="place-famous__img">
+                                <div class="place-famous__intro">
+                                    <h5 class="place-famous__name">Enland</h5>
+                                    <p class="place-famous__dsc">Lorem ipsum dolor sit amet, consectetuer</p>
+                                </div>
+                            </a>
+                            <a href="" class="place-famous__link">
+                                <img src="./assets/images/postmark-image/postmark-8.jpg" alt="" class="place-famous__img">
+                                <div class="place-famous__intro">
+                                    <h5 class="place-famous__name">Taipei</h5>
+                                    <p class="place-famous__dsc">Lorem ipsum dolor sit amet, consectetuer</p>
+                                </div>
+                            </a>
+                            <a href="" class="place-famous__link">
+                                <img src="./assets/images/postmark-image/postmark-3.jpg" alt="" class="place-famous__img">
+                                <div class="place-famous__intro">
+                                    <h5 class="place-famous__name">India</h5>
+                                    <p class="place-famous__dsc">Lorem ipsum dolor sit amet, consectetuer</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="place-famous__btns">
+                        <label for="place-famous__btn--1" class="place-famous__btn place-famous__btn--1 place-famous__btn--active"></label>
+                        <label for="place-famous__btn--2" class="place-famous__btn place-famous__btn--2"></label>
+                        <label for="place-famous__btn--3" class="place-famous__btn place-famous__btn--3"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="speed-register">
+                <div class="grid wide">
+                    <div class="row speed-register--center">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="speed-register-text">
+                                Subscribe Now and Quench Your Wanderlust!
+                            </span>
+                        </div>
+                        <div class="col l-3 l-o-3 m-6 c-12 ">
+                            <a href="" class="speed-register__link">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__content">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 margin-bottom-tablet margin-bottom-mobile">
+                            <div class="footer__contact">
+                                <a href="" class="footer__logo-link">
+                                    <img src="./assets/images/logo.png" alt="" class="footer__logo-img">
+                                </a>
+                                <p class="footer__contact-text">Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae</p>
+                                <div class="footer__contact-address">
+                                    <a href="mailto:setsail@qode.com" class="footer__contact-gmail">
+                                        <i class="footer__contact-icon far fa-envelope"></i>
+                                        <span>setsail@qode.com</span>
+                                    </a>
+                                    <a href="tel:1 562 867 5309" class="footer__contact-phone">
+                                        <i class="footer__contact-icon fas fa-phone-alt"></i>
+                                        <span>1 562 867 5309</span>
+                                    </a>
+                                    <a href="https://www.google.rs/maps/place/Charging+Bull/@40.7055242,-74.0133806,20z/data=!4m5!3m4!1s0x0:0xc7db393ae1eff521!8m2!3d40.7055537!4d-74.0134436" class="footer__contact-address-street" target="_blank">
+                                        <i class="footer__contact-icon fas fa-map-marker-alt"></i>
+                                        <span>Broadway & Morris St, New York</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                            <div class="footer__post">
+                                <h5 class="footer__heading">Our Recent Posts</h5>
+                                <div class="footer__post-list">
+                                    <div class="footer__post-item">
+                                        <a href="" class="footer__post-location">Visit Thailand, Bali And China</a>
+                                        <a href="" class="footer__post-date">September 7, 2016</a>
+                                    </div>
+                                    <div class="footer__post-item">
+                                        <a href="" class="footer__post-location">The Sound Of Our Jungle</a>
+                                        <a href="" class="footer__post-date">September 9, 2017</a>
+                                    </div>
+                                    <div class="footer__post-item">
+                                        <a href="" class="footer__post-location">New Year, New Resolutions!</a>
+                                        <a href="" class="footer__post-date">September 2, 2020</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 margin-bottom-mobile">
+                            <div class="footer__subscribe">
+                                <h5 class="footer__heading">Subscribe to our Newsletter</h5>
+                                <span class="footer__dsc">Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho</span>
+                                <div class="footer__form">
+                                    <div class="footer__form-item">
+                                        <i class="footer__form-icon fas fa-user"></i>
+                                        <input type="text" class="footer__form-input" placeholder="Name" required>
+                                    </div>
+                                    <div class="footer__form-item">
+                                        <i class="footer__form-icon far fa-envelope"></i>
+                                        <input type="email" class="footer__form-input" placeholder="Email" required>
+                                    </div>
+                                    <div class="footer__form-item">
+                                        <button type="submit" class="footer__form-submit">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__instagram">
+                                <h5 class="footer__heading">Our Instagram</h5>
+                                <span class="footer__dsc">Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="grid wide">
+                    <p class="footer__copyright-text">
+                        Powered by @
+                        <a href="" class="footer__copyright-link"> Qode Interactive 2021</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-scroll-top">
+        <a href="#scroll-top" class="btn-scroll-top__link">Top</a>
+    </div>
+    <div class="page-different">
+        <div class="page-different-item page-different--web">
+            <svg x="0px" y="0px" viewBox="0 0 87 87" style="fill: #fff; height: 26px;">
+                <path
+                    d="M55.4,81.5c6.1-11.1,5.2-16.1-4.3-24.3c6.1-3.5,9.5-8.5,9.1-15.7c-0.5-8.2-7.7-14.7-16.3-14.6
+                                        c-8.5,0.1-15.6,6.7-15.9,15c-0.3,8.5,5.9,15.8,14.3,16.6c1.4,0.1,2.8,0.2,4.2,0.5c5.9,1.2,10.2,6.7,9.8,12.6
+                                        c-0.4,6.4-5.5,11.4-11.8,11.7C24.9,84.2,5.9,68.5,3.2,49.3C-0.1,26.9,14.4,6.8,36.4,2.8c22.3-4,43.4,10,48.1,32
+                                        c4.3,20-8.6,41.2-28.4,46.7C55.9,81.5,55.6,81.5,55.4,81.5z"
+                ></path>
+            </svg>
+            <span class="page-different-text">Relative</span>
+        </div>
+        <div class="page-different-item page-different--shop">
+            <a href="" class="page-different-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="page-different-text">Buy Now</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal User -->
+    <!-- <div class="modal-user">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__container"> -->
+    <!-- Login Form -->
+    <!-- <div class="auth-form">
+                <div class="auth-form__header">
+                    <a href="" class="auth-form-switch-btn">Login</a>
+                    <a href="" class="auth-form-switch-btn no-active">Register</a>
+                </div>
+                <div class="auth-form__content">
+                    <div class="auth-form__text">
+                        <h3 class="auth-form__heading">Sign In Here!</h3>
+                        <span class="auth-form__dsc">Log into your account in just a few simple steps</span>
+                    </div>
+
+                    <form action="#" class="auth-form__body">
+                        <div class="auth-form__data">
+                            <span class="fas fa-user"></span>
+                            <input type="text" required name="User name" class="auth-form__input" placeholder="User Name">
+                        </div>
+                        <div class="auth-form__data">
+                            <span class="fas fa-lock"></span>
+                            <input type="password" required name="Password" class="auth-form__input" placeholder="Password">
+                        </div>
+                    </form>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__remember-acc">
+
+                            <input type="checkbox" id="auth-form__remember" class="auth-form__remember-input">
+                            <label for="auth-form__remember" class="auth-form__remember-label">Remember me</label>
+                        </div>
+
+                        <div class="auth-form__lost-pass">
+                            <a href="" class="auth-form__forgot-link">Lost Your password?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__btn">
+                        <button type="submit">Sign in</button>
+                    </div>
+
+                    <p class="auth-form-text-social">Sign in with Facebook or Google+</p>
+                </div>
+                <div class="auth-form__footer">
+                    <button class="btn-facebook">Facebook</button>
+                    <button class="btn-google">Google+</button>
+                </div>
+            </div> -->
+
+    <!-- Register Form -->
+    <!-- <div class="auth-form">
+                <div class="auth-form__header">
+                    <a href="" class="auth-form-switch-btn no-active">Login</a>
+                    <a href="" class="auth-form-switch-btn">Register</a>
+                </div>
+                <div class="auth-form__content">
+                    <div class="auth-form__text">
+                        <h3 class="auth-form__heading">Register Now!</h3>
+                        <span class="auth-form__dsc">Join the SetSail community to day & set up a free account</span>
+                    </div>
+
+                    <form action="#" class="auth-form__body">
+                        <div class="auth-form__data">
+                            <span class="fas fa-user"></span>
+                            <input type="text" required name="User name" class="auth-form__input" placeholder="User Name">
+                        </div>
+                        <div class="auth-form__data">
+                            <span class="far fa-envelope"></span>
+                            <input type="email" required name="Email" class="auth-form__input" placeholder="Email">
+                        </div>
+                        <div class="auth-form__data">
+                            <span class="fas fa-lock"></span>
+                            <input type="password" required name="Password" class="auth-form__input" placeholder="Password">
+                        </div>
+                        <div class="auth-form__data">
+                            <span class="fas fa-lock"></span>
+                            <input type="password" required name="Repeat Password" class="auth-form__input" placeholder="Repeat Password">
+                        </div>
+                    </form>
+                    <div class="auth-form__btn">
+                        <button type="submit">Register</button>
+                    </div>
+                </div>
+            </div> -->
+    </div>
+    </div>
+
+    <!-- Modal Search -->
+    <!-- <div class="modal-search">
+        <div class="modal-search__overlay"></div>
+
+        <div class="modal-search__close">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="modal-search__container">
+            <input type="text" name="Keyword Search" placeholder="Search...">
+            <input type="submit" value="Find now">
+        </div>
+
+    </div> -->
+
+
+</body>
+
+</html>
